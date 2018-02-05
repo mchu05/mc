@@ -1,0 +1,20 @@
+This is Craft set up
+
+1) Open Mamp - Run Servers
+    
+    localhost:8888/MAMP
+    
+    localhost:8888/admin
+
+2)
+To just compile the scripts and SCSS one time, simply run the command 'gulp'.
+To watch the templates, .scss, and .js files for changes, and to automatically compile and minify the relevant files, run the command 'gulp serve-lr'. If the livereload browser extensions are installed and enabled, the browser will automatically refresh when any changes are made.
+Additionally, you can run the command gulp serve-bs to run browser sync. It will also compile and minify the relevant files and reload the browser. Additionally, it will allow browsers to sync their scrolling and clicks. Also useful for testing the site on local network mobile devices.
+
+
+login:
+m5chu/kimbo058
+
+helpful:
+https://gist.github.com/aaronwaldon/ef06dc31818ade807b4e33149b5c5340
+https://yehuang.me/development%20environment/2015/11/05/how-to-install-craft-cms-on-mac-os-using-mamp/

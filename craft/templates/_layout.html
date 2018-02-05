@@ -1,0 +1,79 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # See Twig’s Template Inheritance documentation for more details:
+ # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
+ #}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+	<link rel="home" href="{{ siteUrl }}" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+	<link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/styles/mdb.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/styles/styles.css?hehe">
+<body>
+
+		<header>
+			{% include "_nav.html" %}
+		</header>
+		
+		<!--Main layout-->
+		<main class="pb-0">
+			<section class="home">
+				<div class="content">
+					<h1>{{ siteName }}</h1>
+					<p>Hi, I'm Monica.</p>
+					<p>Explorer. Deep thinker. BMath. Front End Developer.</p>   
+					<p>Toronto, Waterloo, Ottawa. Alumna of the University of Waterloo.</p>
+					<p>Intrigued by design, tech, front end development, traveling, hikes, EDM, art, film, delicious food, happy vibes, and conversations.</p>
+					<p>I indulge in the company of my close friends, video games, makeup, keeping good fitness by turning up the music and dancing, animals, food and alcohol</p>
+					<p>Seeking to be inspired, to envision the unlikely, to work hard for things that are worth it, and to be surrounded by those who bring out the best in me.</p>
+				</div>
+				<footer class="page-footer center-on-small-only mt-0">
+					<div class="footer-copyright">
+						<div class="container-fluid">
+							Copyright {{ now.year }}. ♥ All rights reserved.
+						</div>
+					</div>
+				</footer>
+			</section>
+		</main>
+		<!--/.Main layout-->
+		
+		<!--Footer-->
+
+	<!-- <div id="container">
+		<header id="header">
+			<nav>
+				<ul>
+					<li><a href="{{ url('news') }}" {% if craft.request.firstSegment == 'news' %}class="active"{% endif %}>News</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="content" role="main">
+			{% block content %}
+				<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
+				<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
+			{% endblock %}
+		</main>
+	</div> -->
+
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./assets/js/mdb.min.js"></script>
+	<script src="./assets/js/scripts.js?hehe"></script>
+	
+</body>
+</html>

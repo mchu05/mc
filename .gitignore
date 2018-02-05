@@ -1,0 +1,5 @@
+#node files
+/node_modules/*
+/craft/app/*
+/craft/storage/*
+/craft/plugins/*
