@@ -21,59 +21,280 @@
 
 	<link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/styles/mdb.css" />
+
 	<link rel="stylesheet" type="text/css" href="./assets/styles/styles.css?hehe">
 <body>
 
-		<header>
-			{% include "_nav.html" %}
-		</header>
-		
-		<!--Main layout-->
-		<main class="pb-0">
-			<section class="home">
-				<div class="content">
-					<h1>{{ siteName }}</h1>
-					<p>Hi, I'm Monica.</p>
-					<p>Explorer. Deep thinker. BMath. Front End Developer.</p>   
-					<p>Toronto, Waterloo, Ottawa. Alumna of the University of Waterloo.</p>
-					<p>Intrigued by design, tech, front end development, traveling, hikes, EDM, art, film, delicious food, happy vibes, and conversations.</p>
-					<p>I indulge in the company of my close friends, video games, makeup, keeping good fitness by turning up the music and dancing, animals, food and alcohol</p>
-					<p>Seeking to be inspired, to envision the unlikely, to work hard for things that are worth it, and to be surrounded by those who bring out the best in me.</p>
-				</div>
-				<footer class="page-footer center-on-small-only mt-0">
-					<div class="footer-copyright">
-						<div class="container-fluid">
-							Copyright {{ now.year }}. ♥ All rights reserved.
-						</div>
+	<header>
+		{% include "_nav.html" %}
+
+		<div class="view hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('http://localhost:8888/assets/images/bg-img2.jpg')">
+            <div class="full-bg-img">
+                <div class="container flex-center">
+                    <div class="row pt-5 mt-3">
+                        <div class="col-md-12 mb-3">
+                            <div class="intro-info-content text-center">
+                                <h1 class="display-1 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s">
+                                    Monica Chu
+                                </h1>
+                                <h5 class="font-up mb-5 mt-1 dark-grey-text spacing font-bold wow fadeInDown" data-wow-delay="0.3s">Front End Developer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+
+	<main class="pb-0">
+        <div class="container">
+            <!--First row-->
+            <div class="row mt-4 pt-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-lg-5">
+                    <!--Featured image -->
+                    <div class="view overlay hm-white-light z-depth-1-half">
+                        <img src="/assets/images/me-2.jpg" class="img-fluid " alt="">
+                        <div class="mask">
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!--Main information-->
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <h2 class="h2-responsive font-bold dark-grey-text">A little about me</h2>
+                    <hr>
+                    {% if entry.body %}
+                        {{ entry.body }}
+                    {% endif %}
+                </div>
+            </div>
+            <!--/.First row-->
+
+            <hr class="extra-margins my-5">
+
+            <!--Second row-->
+            <div class="row pt-4 mb-4">
+                <!--First columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card mb-r wow fadeIn" data-wow-delay="0.4s">
+
+                        <!--Card image-->
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/65.jpg" alt="Card image cap">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title text-center dark-grey-text">
+                                <strong>Card title</strong>
+                            </h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+
+                <!--Second columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card mb-r wow fadeIn" data-wow-delay="0.6s">
+
+                        <!--Card image-->
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/64.jpg" alt="Card image cap">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title text-center dark-grey-text">
+                                <strong>Card title</strong>
+                            </h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Second columnn-->
+
+                <!--Third columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card mb-r wow fadeIn" data-wow-delay="0.8s">
+
+                        <!--Card image-->
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/72.jpg" alt="Card image cap">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title text-center dark-grey-text">
+                                <strong>Card title</strong>
+                            </h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Third columnn-->
+            </div>
+            <!--/.Second row-->
+        </div>
+
+        <!--Second container-->
+        <div class="container-fluid pb-0" style="background-color: #f4f4fa">
+            <div class="container py-4">
+
+                <!--Section: Services-->
+                <section id="services" class="section mt-3 mb-3 pb-3">
+
+                    <!-- Section heading -->
+                    <h3 class="text-center title my-5 pt-4 pb-5 dark-grey-text font-bold wow fadeIn" data-wow-delay="0.2s">
+                        <strong>Our services</strong>
+                    </h3>
+
+                    <!-- First row -->
+                    <div class="row wow fadeIn" data-wow-delay="0.4s">
+
+                        <!-- First column -->
+                        <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+                                    <i class="fas fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <strong>Web/Front End Development</strong>
+                                </p>
+                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
+                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a>read more</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+                        <!-- /First column -->
+
+                        <!-- Second column -->
+                        <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+                                    <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <strong>Development</strong>
+                                </p>
+                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
+                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a>read more</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+                        <!-- /.Second column -->
+
+                        <!-- Third column -->
+                        <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+                                    <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <strong>Branding</strong>
+                                </p>
+                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
+                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a>read more</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+                        <!-- /.Third column -->
+
+                        <!-- Fourth column -->
+                        <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+                                    <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <strong>Marketing</strong>
+                                </p>
+                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
+                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a>read more</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+                        <!-- /.Fourth column -->
+
+                    </div>
+                    <!-- /.First row -->
+
+                </section>
+                <!--/Section: Services-->
+
+            </div>
+
+        </div>
+        <!--Second container-->
+
+    </main>
+
+	<!-- <main class="pb-0">
+		<section class="home">
+			<div class="content">
+				<h1>{{ siteName }}</h1>
+				{% if entry.body %}
+					{{ entry.body }}
+				{% endif %}
+			</div>
+			<footer class="page-footer center-on-small-only mt-0">
+				<div class="footer-copyright">
+					<div class="container-fluid">
+						Copyright {{ now.year }}. ♥ All rights reserved.
 					</div>
-				</footer>
-			</section>
-		</main>
-		<!--/.Main layout-->
-		
-		<!--Footer-->
+				</div>
+			</footer>
+		</section>
+	</main> -->
 
-	<!-- <div id="container">
-		<header id="header">
-			<nav>
-				<ul>
-					<li><a href="{{ url('news') }}" {% if craft.request.firstSegment == 'news' %}class="active"{% endif %}>News</a></li>
-				</ul>
-			</nav>
-		</header>
+	<script type="text/javascript" src="./assets/js/jquery-3.1.1.min.js"></script>
 
-		<main id="content" role="main">
-			{% block content %}
-				<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
-				<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
-			{% endblock %}
-		</main>
-	</div> -->
+    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
 
-	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="./assets/js/mdb.min.js"></script>
-	<script src="./assets/js/scripts.js?hehe"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./assets/js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="./assets/js/jarallax.js"></script>
+
+	<script type="text/javascript" src="./assets/js/scripts.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 	
 </body>
 </html>
