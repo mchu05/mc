@@ -42,26 +42,29 @@
       a {
         align-items: center; 
         position: relative;
-        top: 0%;
         color: #fff;
         text-transform: uppercase;
         font-family: 'Work sans', sans-serif;
         font-weight: 300;
         letter-spacing: 4px;
         text-decoration: none;
-        justify-content: center;
+        justify-content: baseline;
         font-size: 0.9rem;
-        height:100%;
+        height: 100%;
+        width: 100%;
         display: flex !important;
+        flex-direction: column;
+        text-align: -webkit-center;
+        padding-top:30px;
+        @include breakpoint("sm"){padding-top:45vh;}
         
         &:before {
           content: '';
           width: 70px;
           height: 2px;
           background-color: $link;
-          position: absolute;
-          top: 50%;
-          left: 0;
+          position: relative;
+          top: 30px;
           z-index: 100;
           transform: translateX(-100%);
           opacity: 0;
@@ -77,20 +80,11 @@
           font-size: 0.7rem;
           transition: all .2s linear;
           opacity: 0;
-          position: absolute;
           z-index: 100;
           color: $link;
-          display: block;
-          margin-right: auto;
-          margin-left: auto;
-          left: 0;
-          right: 0;
-          bottom: -50px;
-          text-transform: none;
-          font-family: 'Open sans', serif;
-          font-weight: 300;
-          font-style: italic;
+          padding:20px 15px 0 15px;
           letter-spacing: 0;
+
         }
         &:hover:after {
           transform: translateY(15px);
@@ -100,11 +94,42 @@
     }  
   }
 
-  nav li:nth-of-type(1){background-color: #333644}
-  nav li:nth-of-type(2){background-color: #D4A5A5}
-  nav li:nth-of-type(3){background-color: #84577C}
-  nav li:nth-of-type(4){background-color: #C65F63}
-  nav li:nth-of-type(5){background-color: #F6E1B8}
+  nav li:nth-of-type(1){
+    background-color: #333644;
+    a:hover{
+      color: rgba(255,255,255, 0.7);
+    }
+  }
+  nav li:nth-of-type(2){
+    background-color: #D4A5A5;
+  }
+  nav li:nth-of-type(3){
+    background-color: #84577C;
+    a:hover{
+      color: rgba(255,255,255, 0.7);
+    }
+    a:after{
+      color: white;
+    }
+  }
+  nav li:nth-of-type(4){
+    background-color: #C65F63;
+    a:hover {
+      color: rgba(255,255,255, 0.7);
+    }
+    a:after {
+      color: white;
+    }
+  }
+  nav li:nth-of-type(5){
+    background-color: #F6E1B8;
+    a{
+      color:#3E4551;
+    }
+    a:after, a:hover{
+      color:#3E4551;
+    }
+  }
 
 
 @include breakpoint("xs"){
