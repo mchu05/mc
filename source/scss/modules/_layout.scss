@@ -19,6 +19,10 @@ header .view {
   height:450px;
 }
 
+h1{
+  text-shadow: 0 1px 0 rgba(55, 55, 55, 0.4);
+}
+
 main > section{
   padding-top: 20px;
   @include breakpoint("md"){
@@ -65,7 +69,6 @@ main > section{
     line-height: 1.36;
     text-align: center;
     letter-spacing: 1px;
-
   }
 
   .content{

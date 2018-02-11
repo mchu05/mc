@@ -28,7 +28,7 @@
 	<header>
 		{% include "_nav.html" %}
 
-		<div class="view hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('http://localhost:8888/assets/images/bg-img2.jpg')">
+		<div class="view hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('http://localhost:8888/assets/images/bg-img1.jpg')">
             <div class="full-bg-img">
                 <div class="container flex-center">
                     <div class="row pt-5 mt-3">
@@ -61,8 +61,8 @@
                 </div>
 
                 <!--Main information-->
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
-                    <h2 class="h2-responsive font-bold dark-grey-text">A little about me</h2>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s" id="about">
+                    <h2 class="h2-responsive font-bold dark-grey-text">Quick Facts</h2>
                     <hr>
                     {% if entry.body %}
                         {{ entry.body }}
@@ -260,6 +260,13 @@
         </div>
         <!--Second container-->
 
+        <footer class="page-footer center-on-small-only mt-0">
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    Copyright {{ now.year }}. ♥ All rights reserved.
+                </div>
+            </div>
+        </footer>
     </main>
 
 	<!-- <main class="pb-0">
