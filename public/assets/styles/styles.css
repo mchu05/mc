@@ -406,6 +406,9 @@ header .view {
 h1 {
   text-shadow: 0 2px 0 rgba(55, 55, 55, 0.4); }
 
+h5 {
+  font-family: "Cutive Mono", monospace; }
+
 .content p {
   font-family: "Cutive Mono", monospace; }
 
