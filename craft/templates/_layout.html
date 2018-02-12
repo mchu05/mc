@@ -28,16 +28,26 @@
 	{% include "_nav.html" %}
     
     <header>
-		<div class="view hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('http://localhost:8888/assets/images/bg-img1.jpg')">
+        <!-- background image -->
+        {% if entry.pageImg %}
+            {% set asset = entry.pageImg.first() %}
+        {% endif %}
+		<div class="view hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('{{ asset.getUrl() }}')">
             <div class="full-bg-img">
                 <div class="container flex-center">
                     <div class="row pt-5 mt-3">
                         <div class="col-md-12 mb-3">
                             <div class="intro-info-content text-center">
+                                {% if entry.title %}
                                 <h1 class="display-1 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s">
-                                    Monica Chu
+                                    {{ entry.title }}
                                 </h1>
-                                <h5 class="font-up mb-5 mt-1 spacing font-bold wow fadeInDown" data-wow-delay="0.3s">Front End Developer | Nerd</h5>
+                                {% endif %}
+                                
+                                <!-- Subtitle -->
+                                <h5 class="font-up mb-5 mt-1 spacing font-bold wow fadeInDown" data-wow-delay="0.3s">
+                                    Front End Developer | Nerd
+                                </h5>
                             </div>
                         </div>
                     </div>
