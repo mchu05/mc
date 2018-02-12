@@ -277,7 +277,7 @@ nav li:nth-of-type(5) {
 Burger king
 ==================================== */
 .open-overlay {
-  position: absolute;
+  position: fixed;
   right: 2.5em;
   top: 2em;
   z-index: 100;
@@ -404,7 +404,10 @@ header .view {
   height: 450px; }
 
 h1 {
-  text-shadow: 0 1px 0 rgba(55, 55, 55, 0.4); }
+  text-shadow: 0 2px 0 rgba(55, 55, 55, 0.4); }
+
+.content p {
+  font-family: "Cutive Mono", monospace; }
 
 footer {
   font-family: "Cutive Mono", monospace;

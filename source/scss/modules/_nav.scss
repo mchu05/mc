@@ -237,7 +237,7 @@ Burger king
 ==================================== */
 
 .open-overlay {
-  position: absolute;
+  position: fixed;
   right: 2.5em;
   top: 2em;
   z-index: 100;

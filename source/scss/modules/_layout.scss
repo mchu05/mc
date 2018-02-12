@@ -20,5 +20,14 @@ header .view {
 }
 
 h1{
-  text-shadow: 0 1px 0 rgba(55, 55, 55, 0.4);
+  text-shadow: 0 2px 0 rgba(55, 55, 55, 0.4);
+}
+h5{
+    //color:$link;
+}
+
+.content{
+    p{
+        font-family:  $font-stack-3;
+    }
 }
