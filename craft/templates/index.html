@@ -43,7 +43,7 @@
 	<hr class="my-5">
 	
 	<h3 class="text-center">Instagram Feed</h3>
-	<div class="row pt-4 mb-4">
+	<div class="row pt-4 mb-4" id="instafeed">
 		<div class="col-md-4">
 			<div class="card mb-r wow fadeIn" data-wow-delay="0.4s">
 				<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/65.jpg" alt="Card image cap">
@@ -90,7 +90,6 @@
 			<h3 class="text-center title my-5 pt-4 pb-5 dark-grey-text font-bold wow fadeIn" data-wow-delay="0.2s">
 				<strong>My services</strong>
 			</h3>
-			<div id="instafeed"></div>
 			<div class="row wow fadeIn" data-wow-delay="0.4s">
 				<div class="col-md-6 mb-r text-center">
 					<div class="card card-body text-left white hoverable">
@@ -148,7 +147,26 @@
 		</section>
 	</div>
 </div>
+
+{% set img, caption = '{{image}}','{{caption}}' %}
 <script type="text/javascript" src="./assets/js/instafeed.js"></script>
+
+<script type="text/javascript">
+	var feed = new Instafeed({
+		get: 'user',
+		userId: '22975752',
+		accessToken:'22975752.2a7da3a.1480ebd7ccad458dad109aa95357c24f',
+		limit: '9',
+		sortBy: 'most-recent',
+		// target: 'instafeed',
+		//tagName: 'awesome',
+		resolution: 'standard_resolution',
+		clientId: '2a7da3a55dab4e5da71adfa0448293c7',
+		template: '<img src="{{img}}" alt="{{caption}}" /> <p>{{caption}}</p>'
+	});
+	feed.run();
+</script>
+
 	<!-- <h1>{{ entry.title }}</h1>
 
 	{{ entry.body }}
