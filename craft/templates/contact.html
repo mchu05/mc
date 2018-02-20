@@ -2,7 +2,42 @@
 {% set title = "Contact" %}
 
 {% block content %}
-	<h1>Contact me</h1>
-	<p>I really like to help out please find ways to reach me!</p>
-	<p>submit this email form and will get back to you!</p>
+
+<div class="container contact">
+	<!-- Form contact -->
+	<form>
+		<p class="h5 text-center mb-4">Reach out and let me know you exist or just give me a little shout</p>
+
+		<div class="md-form">
+			<i class="fa fa-user prefix grey-text"></i>
+			<input type="text" id="form3" class="form-control">
+			<label for="form3">Name</label>
+		</div>
+
+		<div class="md-form">
+			<i class="fa fa-envelope prefix grey-text"></i>
+			<input type="text" id="form2" class="form-control">
+			<label for="form2">Email</label>
+		</div>
+
+		<div class="md-form">
+			<i class="fa fa-tag prefix grey-text"></i>
+			<input type="text" id="form32" class="form-control">
+			<label for="form34">Subject</label>
+		</div>
+
+		<div class="md-form">
+			<i class="fa fa-pencil prefix grey-text"></i>
+			<textarea type="text" id="form8" class="md-textarea" style="height: 100px"></textarea>
+			<label for="form8">Your message</label>
+		</div>
+
+		<div class="text-center">
+			<button class="btn btn-unique">Send</button>
+		</div>
+		
+		<!-- Remember to include an invisi input and hide make sure users that complete this input don't get spammed!! -->
+	</form>
+</div>
+<!-- Form contact -->
 {% endblock %}
