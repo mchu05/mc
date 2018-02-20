@@ -3,7 +3,11 @@
 {% set title = "Work" %}
 
 {% block content %}
-	<h1>Page not found</h1>
-
-	<p>What’s worse, a hilarious 404 page can’t be found either.</p>
+<div class="container">
+	<div class="row mt-4 pt-lg-4 wow fadeIn" data-wow-delay="0.2s">
+		{% if entry.body %}
+			{{ entry.body }}
+		{% endif %}
+	</div>
+</div>
 {% endblock %}

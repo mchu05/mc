@@ -2,10 +2,13 @@
 {% set title = "About" %}
 
 {% block content %}
+
+<div class="container">
+	<div class="row mt-4 pt-lg-4 wow fadeIn" data-wow-delay="0.2s">
 	<h1>About</h1>
-
 	{% if entry.body %}
-		<span> {{ entry.body }} </span>
+		{{ entry.body }}
 	{% endif %}
-
+	</div>
+</div>
 {% endblock %}

@@ -5,39 +5,36 @@
 
 <div class="container contact">
 	<!-- Form contact -->
-	<form>
-		<p class="h5 text-center mb-4">Reach out and let me know you exist or just give me a little shout</p>
+	<div class="row mt-4"></div>
+		<form class="col-md-8 offset-md-2 card mb-r wow fadeIn" data-wow-delay="0.4s">
+			<p class="text-center mb-4">This is the form you submit if you would like to connect with my directly!</p>
+			<div class="md-form">
+				<input type="text" id="form3" class="form-control">
+				<label for="form3">Name</label>
+			</div>
 
-		<div class="md-form">
-			<i class="fa fa-user prefix grey-text"></i>
-			<input type="text" id="form3" class="form-control">
-			<label for="form3">Name</label>
-		</div>
+			<div class="md-form">
+				<input type="text" id="form2" class="form-control">
+				<label for="form2">Email</label>
+			</div>
 
-		<div class="md-form">
-			<i class="fa fa-envelope prefix grey-text"></i>
-			<input type="text" id="form2" class="form-control">
-			<label for="form2">Email</label>
-		</div>
+			<div class="md-form">
+				<input type="text" id="form32" class="form-control">
+				<label for="form34">Subject</label>
+			</div>
 
-		<div class="md-form">
-			<i class="fa fa-tag prefix grey-text"></i>
-			<input type="text" id="form32" class="form-control">
-			<label for="form34">Subject</label>
-		</div>
+			<div class="md-form">
+				<textarea type="text" id="form8" class="md-textarea" style="height: 100px"></textarea>
+				<label for="form8">Your message</label>
+			</div>
 
-		<div class="md-form">
-			<i class="fa fa-pencil prefix grey-text"></i>
-			<textarea type="text" id="form8" class="md-textarea" style="height: 100px"></textarea>
-			<label for="form8">Your message</label>
-		</div>
-
-		<div class="text-center">
-			<button class="btn btn-unique">Send</button>
-		</div>
-		
-		<!-- Remember to include an invisi input and hide make sure users that complete this input don't get spammed!! -->
-	</form>
+			<div class="text-center">
+				<button class="btn btn-unique">Send</button>
+			</div>
+			
+			<!-- Remember to include an invisi input and hide make sure users that complete this input don't get spammed!! -->
+		</form>
+	</div>
 </div>
 <!-- Form contact -->
 {% endblock %}
