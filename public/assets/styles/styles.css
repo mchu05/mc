@@ -431,3 +431,15 @@ footer {
   background: rgba(255, 255, 255, 0.7); }
   .contact form p {
     color: #757575; }
+
+.social-links {
+  padding-bottom: 15px; }
+  .social-links svg {
+    width: 15px !important;
+    height: 15px !important; }
+
+.social-links a {
+  margin: 0 5px;
+  padding: 6px;
+  border-radius: 5px;
+  background: #e6ddde; }
