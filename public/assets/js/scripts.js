@@ -1,9 +1,12 @@
-$('.card .activator').on('click',function(){        
-    $('.card-reveal').slideToggle('fast');
+$('.card .activator').on('click',function(){
+    var dis = $(this);
+    //console.log(dis);    
+    dis.parent().find('.card-reveal').slideToggle('fast');
 });
 
 $('.card-reveal .close').on('click',function(){
-    $('.card-reveal').slideToggle('fast');
+    var dis = $(this);
+    dis.closest('.card-reveal').slideToggle('fast');
 });
 $('.open-overlay').click(function() {
     var overlay_navigation = $('.overlay-navigation'),

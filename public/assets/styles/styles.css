@@ -95,10 +95,6 @@ h1, h3, h4, h5, h6, p {
 .card .card-content {
   padding: 10px; }
 
-.card .card-content .card-title, .card-reveal .card-title {
-  font-size: 24px;
-  font-weight: 200; }
-
 .card .card-action {
   padding: 20px;
   border-top: 1px solid rgba(160, 160, 160, 0.2); }
@@ -131,9 +127,8 @@ h1, h3, h4, h5, h6, p {
   color: rgba(0, 0, 0, 0.71);
   margin: 20px; }
 
-.btn-custom {
-  background-color: transparent;
-  font-size: 18px; }
+.card .activator {
+  cursor: pointer; }
 
 .overlay-navigation {
   position: fixed;
