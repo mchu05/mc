@@ -5,10 +5,68 @@
 
 <div class="container">
 	<div class="row mt-4 pt-lg-4 wow fadeIn" data-wow-delay="0.2s">
-	<h1>About</h1>
-	{% if entry.body %}
-		{{ entry.body }}
-	{% endif %}
+		<div class="col-md-12">
+		{% if entry.body %}
+			{{ entry.body }}
+		{% endif %}
+		</div>
 	</div>
+
+	<div class="row pt-4 mb-4">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-image activator">
+					<img class="img-responsive img-fluid" src="https://i.pinimg.com/564x/6a/56/93/6a5693795ced83bf2940882a8e7a6a62.jpg">
+				</div>
+				<div class="card-content card-body activator">
+					<span class="card-title">Material Cards</span>
+				</div>
+				<div class="card-action">
+					<a href="#" target="new_blank">Link</a>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title">Card Title</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-image activator">
+					<img class="img-responsive img-fluid" src="https://i.pinimg.com/564x/6a/56/93/6a5693795ced83bf2940882a8e7a6a62.jpg">
+				</div>
+				<div class="card-content card-body activator">
+					<span class="card-title">Material Cards</span>
+				</div>
+				<div class="card-action">
+					<a href="#" target="new_blank">Link</a>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title">Card Title</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-image activator">
+					<img class="img-responsive img-fluid" src="https://i.pinimg.com/564x/6a/56/93/6a5693795ced83bf2940882a8e7a6a62.jpg">
+				</div>
+				<div class="card-content card-body activator">
+					<span class="card-title">Material Cards</span>
+				</div>
+				<div class="card-action">
+					<a href="#" target="new_blank">Link</a>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title">Card Title</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 {% endblock %}

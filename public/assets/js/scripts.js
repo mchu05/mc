@@ -1,4 +1,10 @@
+$('.card .activator').on('click',function(){        
+    $('.card-reveal').slideToggle('fast');
+});
 
+$('.card-reveal .close').on('click',function(){
+    $('.card-reveal').slideToggle('fast');
+});
 $('.open-overlay').click(function() {
     var overlay_navigation = $('.overlay-navigation'),
       nav_item_1 = $('nav li:nth-of-type(1)'),
